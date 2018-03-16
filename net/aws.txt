@@ -1,0 +1,17 @@
+EC2 - vps instances
+    - everything you care about is in the 
+    - https://console.aws.amazon.com/
+
+S3 - file storage in 'buckets'
+    - each bucket has a globally unique name
+    - files go inside buckets
+
+CloudWatch - monitoring & logging service
+    - click on logs on the left
+    - log groups
+        - log streams
+            - log messages
+
+AWS CLI:
+- aws help
+- aws <cmd> help
