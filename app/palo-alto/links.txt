@@ -1,6 +1,7 @@
 https://live.paloaltonetworks.com/t5/Configuration-Articles/How-to-See-Traffic-from-Default-Security-Policies-in-Traffic/ta-p/57393
 https://www.paloaltonetworks.com/documentation/71/pan-os/pan-os/policy/anti-spyware-profiles#_41497
 https://www.paloaltonetworks.com/documentation/80/pan-os/web-interface-help/objects/objects-security-profiles
+https://live.paloaltonetworks.com/t5/Learning-Articles/How-to-Run-a-Packet-Capture/ta-p/62390
 
 set all to application-default
 - e.g. protocol 'dns' only allowed on 53
