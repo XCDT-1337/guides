@@ -19,3 +19,6 @@ monitor > session browser
 
 wildfire:
 - https://www.panacademy.net/CourseFiles/PAN8-210/PAN8-MOD-9.pdf
+
+Content-ID:
+- https://www.panacademy.net/CourseFiles/PAN8-210/PAN8-MOD-6.pdf
