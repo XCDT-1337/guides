@@ -11,6 +11,8 @@ CloudWatch - monitoring & logging service
     - log groups
         - log streams
             - log messages
+    - https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/master/doc_source/cloudtrail-create-a-trail-using-the-console-first-time.md<Paste>
+    - https://aws.amazon.com/blogs/aws/vpc-flow-logs-log-and-view-network-traffic-flows/
 
 AWS CLI:
 - aws help
