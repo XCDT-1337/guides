@@ -8,3 +8,14 @@ set all to application-default
 
 SSH tunnel decryption:
 - https://www.youtube.com/watch?v=nIRZTCKDnWI
+
+device > setup > management
+- only allow local subnet
+
+device > log settings
+- forward
+
+monitor > session browser
+
+wildfire:
+- https://www.panacademy.net/CourseFiles/PAN8-210/PAN8-MOD-9.pdf
