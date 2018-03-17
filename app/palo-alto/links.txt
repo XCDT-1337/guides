@@ -5,3 +5,6 @@ https://live.paloaltonetworks.com/t5/Learning-Articles/How-to-Run-a-Packet-Captu
 
 set all to application-default
 - e.g. protocol 'dns' only allowed on 53
+
+SSH tunnel decryption:
+- https://www.youtube.com/watch?v=nIRZTCKDnWI
