@@ -5,4 +5,4 @@ Since we can't clone the repository and run scripts durning the competition,
 this is meant more as a descriptive manual on explaining the scripts, quick
 references to common operations or knowledge, and 
 
-Run `build.sh` to generate a printable PDF.
+Run `make` to generate a printable PDF and a single-page HTML version.
