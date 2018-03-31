@@ -1,0 +1,1 @@
+[SS64 Bash reference](https://ss64.com/bash/)

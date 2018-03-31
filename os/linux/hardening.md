@@ -1,16 +1,21 @@
 
+# Additional Information
 
-# Linux Hardening
-
-Cannibalized from https://www.computerworld.com/article/3144985/linux/linux-hardening-a-15-step-checklist-for-a-secure-linux-server.html
+Cannibalized from [this page][cw-hardening].
 
 ## Document the host information
 
 Document the following information:
 
-* Machine name
-* IP address
-* Mac address
+* **Machine name**: Use the `hostname` command, `/etc/resolv.conf`, or
+  `hostnamectl`, depending on what is installed.
+* **IP address**: Use `ifconfig` or `ip addr show`.
+* **OS version** is a bit trickier, depending on your system check any of these places:
+  * `/etc/issue`
+  * `/proc/version`
+  * `lsb_release -a`
+  * `uname -a`
+  * `cat /etc/*elease`
 
 ## Lock the boot directory
 
@@ -27,7 +32,7 @@ following command: `chown root:root /etc/fstab`.
 
 Securing the boot settings:
 
-```
+```bash
 # Set the owner and group of /etc/grub.conf to the root user:
 chown root:root /etc/grub.conf
 
@@ -53,7 +58,7 @@ blacklist usb_storage
 
 ## System update
 
-From https://superuser.com/questions/339537/where-can-i-get-the-repositories-for-old-ubuntu-versions:
+From [this SO question][so-oldrepos]:
 
 > Your system is End-of-Line (EOL), therefore not officially supported. Unless
 > you have a good reason for sticking with 9.04, upgrade to a newer version.
@@ -106,7 +111,7 @@ Disable legacy services:
 
 Run the following:
 
-```
+```bash
 netstat -antp
 ```
 
@@ -124,7 +129,7 @@ Here are some additional options that you need to make sure exist in `/etc/ssh/s
 ```
 Port 99
 PermitRootLogin no
-AllowUsers [user whitelist]
+AllowUsers $USER_WHITELIST
 Protocol2
 IgnoreRhosts to yes
 HostbasedAuthentication no
@@ -241,6 +246,7 @@ for user in `awk -F: '($3 < 500) {print $1 }' /etc/passwd`; do
     fi
 done
 ```
+
 ## Permissions and verifications
 
 ```bash
@@ -281,3 +287,11 @@ chown root:root /etc/shadow
 chmod 600 /etc/gshadow
 chown root:root /etc/gshadow
 ```
+
+### Enabled systemd units
+
+`systemctl list-unit-files | grep enabled`
+
+[so-osversion]: https://unix.stackexchange.com/questions/54987/how-to-determine-centos-version
+[so-oldrepos]: https://superuser.com/questions/339537/where-can-i-get-the-repositories-for-old-ubuntu-versions
+[cw-hardening]: https://www.computerworld.com/article/3144985/linux/linux-hardening-a-15-step-checklist-for-a-secure-linux-server.html
