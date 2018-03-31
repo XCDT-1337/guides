@@ -1,0 +1,24 @@
+https://live.paloaltonetworks.com/t5/Configuration-Articles/How-to-See-Traffic-from-Default-Security-Policies-in-Traffic/ta-p/57393
+https://www.paloaltonetworks.com/documentation/71/pan-os/pan-os/policy/anti-spyware-profiles#_41497
+https://www.paloaltonetworks.com/documentation/80/pan-os/web-interface-help/objects/objects-security-profiles
+https://live.paloaltonetworks.com/t5/Learning-Articles/How-to-Run-a-Packet-Capture/ta-p/62390
+
+set all to application-default
+- e.g. protocol 'dns' only allowed on 53
+
+SSH tunnel decryption:
+- https://www.youtube.com/watch?v=nIRZTCKDnWI
+
+device > setup > management
+- only allow local subnet
+
+device > log settings
+- forward
+
+monitor > session browser
+
+wildfire:
+- https://www.panacademy.net/CourseFiles/PAN8-210/PAN8-MOD-9.pdf
+
+Content-ID:
+- https://www.panacademy.net/CourseFiles/PAN8-210/PAN8-MOD-6.pdf

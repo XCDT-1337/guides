@@ -1,0 +1,23 @@
+EC2 - vps instances
+    - everything you care about is in the 
+    - https://console.aws.amazon.com/
+
+S3 - file storage in 'buckets'
+    - each bucket has a globally unique name
+    - files go inside buckets
+
+CloudWatch - monitoring & logging service
+    - click on logs on the left
+    - log groups
+        - log streams
+            - log messages
+    - https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/master/doc_source/cloudtrail-create-a-trail-using-the-console-first-time.md<Paste>
+    - https://aws.amazon.com/blogs/aws/vpc-flow-logs-log-and-view-network-traffic-flows/
+
+AWS CLI:
+- aws help
+- aws <cmd> help
+
+https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Internet_Gateway.html
+
+To enable communication over the Internet for IPv4, your instance must have a public IPv4 address or an Elastic IP address that's associated with a private IPv4 address on your instance. Your instance is only aware of the private (internal) IP address space defined within the VPC and subnet. The Internet gateway logically provides the one-to-one NAT on behalf of your instance, so that when traffic leaves your VPC subnet and goes to the Internet, the reply address field is set to the public IPv4 address or Elastic IP address of your instance, and not its private IP address. Conversely, traffic that's destined for the public IPv4 address or Elastic IP address of your instance has its destination address translated into the instance's private IPv4 address before the traffic is delivered to the VPC. 
